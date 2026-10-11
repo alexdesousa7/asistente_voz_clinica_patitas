@@ -40,6 +40,24 @@ El agente contiene seis intenciones de negocio más la extra de transferencia, a
 
 `tipo_mascota` es una entidad personalizada; `telefono` es una entidad regex que restringe el contacto a móviles españoles. El flujo de cita requiere todos sus parámetros y termina en `confirmar_cita`. La solicitud y el identificador de confirmación se guardan solo en memoria durante un máximo de 15 minutos; no es una agenda real ni conserva datos después de reiniciar el proceso.
 
+## Estructura del repositorio
+
+| Ruta | Contenido |
+|---|---|
+| `main.py`, `business.py` | Webhook FastAPI y reglas de negocio (validación, formatos, transferencia). |
+| `ocr.py`, `documentos/` | OCR con Tesseract y las 3 fichas de demostración con su JSON. |
+| `cliente_voz.py` | Cliente de voz de escritorio (micrófono → Dialogflow → altavoz). |
+| `dialogflow_agent/`, `dialogflow_agent.zip` | Agente Dialogflow ES generado por `scripts/build_dialogflow_agent.py`. |
+| `scripts/` | Generadores del agente, de las fichas y del paquete de Cloud Run. |
+| `tests/` | Pruebas (`python -m unittest discover -s tests`). |
+
+## Cómo funciona
+
+1. El cliente de voz envía el audio a Dialogflow ES, que hace el STT y detecta la intención.
+2. Dialogflow llama al webhook (`POST /webhook`) con la cabecera secreta.
+3. El webhook gestiona la cita, o responde con Gemini (Vertex AI) usando **solo** el texto OCR de los documentos; si no hay información, dice que no consta.
+4. Dialogflow convierte la respuesta en voz (TTS) y el cliente la reproduce. Ante una urgencia, `transferir_humano` simula el paso a un operador y cierra el cliente.
+
 ## Requisitos previos
 
 - Python 3.10 o posterior.
@@ -110,8 +128,10 @@ El resultado queda en `documentos/documentos_ocr.json`. El webhook lo lee al arr
    python scripts/build_dialogflow_agent.py
    ```
 
+   > Importar el ZIP no conserva la URL ni la cabecera del webhook: hay que volver a configurarlas (paso 3). Reimportar sobrescribe los cambios manuales.
+
 3. En **Fulfillment**, activa el webhook y configura la URL HTTPS pública terminada en `/webhook`.
-4. Configura el mismo webhook para `solicitar_cita`, `confirmar_cita`, `cancelar_cita`, `consultar_horarios`, `consultar_servicios` y `consultar_documentos`. El slot filling de `solicitar_cita` está habilitado.
+4. Configura el mismo webhook para `solicitar_cita`, `confirmar_cita`, `cancelar_cita`, `consultar_horarios`, `consultar_servicios`, `consultar_documentos`, `transferir_humano`, **Default Welcome Intent** (opcional) y **Default Fallback Intent** (responde desde los documentos). El slot filling de `solicitar_cita` está habilitado.
 5. Para probar en local, inicia el servidor y expón temporalmente el puerto 8000 con un túnel HTTPS. No uses una URL de túnel como despliegue permanente.
 
 Para desplegar el webhook en Cloud Run, primero genera `documentos/documentos_ocr.json` y el paquete:
@@ -171,7 +191,6 @@ uvicorn main:app --reload --port 8000
 Para conversar por voz (en Windows, CMD, con Python y Google Cloud SDK instalados):
 
 ```bat
-cd clinica_voz
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
@@ -181,7 +200,7 @@ set DIALOGFLOW_PROJECT_ID=clinica-patitas-blandas-ndyi
 python cliente_voz.py
 ```
 
-Pulsa Enter una vez; después el cliente graba tras cada respuesta. Se cierra diciendo «adiós» o con Ctrl+C. En el simulador de Dialogflow hay que activar **Settings → Speech → Automatic Text To Speech**.
+Si no has importado el agente con tu propio proyecto, usa tu ID en lugar de `clinica-patitas-blandas-ndyi`. Pulsa Enter una vez; después el cliente graba tras cada respuesta. Se cierra diciendo «adiós» o con Ctrl+C. En el simulador de Dialogflow hay que activar **Settings → Speech → Automatic Text To Speech**.
 
 El cliente envía audio LINEAR16 mono a 16 kHz a `SessionsClient.detect_intent`, mantiene una sesión durante la conversación y reproduce el audio devuelto por Dialogflow. Dialogflow proporciona el reconocimiento de voz (STT) y la síntesis de voz (TTS); no se necesita contratar otro servicio de voz. En Linux, `sounddevice` puede necesitar la biblioteca de sistema PortAudio.
 
