@@ -1,4 +1,18 @@
-# Asistente de voz para una clínica veterinaria
+# 🐾 Asistente de voz — Clínica Patitas 🎙️
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Dialogflow-ES-FF9800?style=for-the-badge&logo=dialogflow" />
+  <img src="https://img.shields.io/badge/Google%20Cloud-Run-4285F4?style=for-the-badge&logo=googlecloud" />
+  <img src="https://img.shields.io/badge/Gemini-Vertex%20AI-8E75B2?style=for-the-badge&logo=googlegemini" />
+  <img src="https://img.shields.io/badge/FastAPI-Webhook-009688?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/Tesseract-OCR-3C873A?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/RAG-Sin%20alucinaciones-8A2BE2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Project-Voice%20Assistant-blue?style=for-the-badge" />
+</p>
+
+---
 
 Prototipo académico de una clínica ficticia, **Clínica Patitas**, para pedir una cita por voz o consultar información de sus documentos. Dialogflow ES en Google Cloud reconoce la intención y administra los turnos; en la solicitud de cita pide especie, nombre de la mascota, motivo, fecha, hora y teléfono, y solo envía la solicitud de demostración cuando la persona confirma con sí. Un webhook FastAPI valida los datos y consulta mediante Gemini en Vertex AI un conjunto pequeño de documentos procesados antes con OCR. Los horarios y servicios incluidos son datos ficticios de demostración, no información de una clínica real.
 
