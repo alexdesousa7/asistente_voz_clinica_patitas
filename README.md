@@ -188,7 +188,13 @@ uvicorn main:app --reload --port 8000
 
 `GET /` comprueba que el webhook está activo. `POST /webhook` recibe las peticiones de Dialogflow ES. Consulta por horarios, servicios o preparación de visitas: las respuestas se restringen al texto OCR. Si faltan documentos, no se encuentra la respuesta o Vertex AI falla o supera el tiempo límite de la petición, el asistente lo indica en vez de inventar una respuesta.
 
-Para conversar por voz (en Windows, CMD, con Python y Google Cloud SDK instalados):
+### Cliente de voz (se ejecuta en Windows, no en WSL)
+
+El cliente necesita micrófono y altavoces, que WSL normalmente no expone. Ejecútalo en **Windows nativo**; el webhook corre en Cloud Run y no depende de tu máquina. Es una instalación independiente y ligera: solo necesita `cliente_voz.py` y `requirements_cliente_voz.txt`.
+
+1. Instala [Python 3.10+](https://www.python.org/downloads/windows/) (marca *Add python.exe to PATH*) y el [Google Cloud SDK](https://cloud.google.com/sdk/docs/install).
+2. Crea una carpeta, por ejemplo `C:\Users\TU_USUARIO\clinica_voz`, y copia en ella `cliente_voz.py` y `requirements_cliente_voz.txt` (renómbralo a `requirements.txt`). Si el repositorio está en WSL, puedes acceder desde el Explorador de Windows en `\\wsl$\`.
+3. Abre **CMD** en esa carpeta y ejecuta:
 
 ```bat
 python -m venv .venv
@@ -200,7 +206,7 @@ set DIALOGFLOW_PROJECT_ID=clinica-patitas-blandas-ndyi
 python cliente_voz.py
 ```
 
-Si no has importado el agente con tu propio proyecto, usa tu ID en lugar de `clinica-patitas-blandas-ndyi`. Pulsa Enter una vez; después el cliente graba tras cada respuesta. Se cierra diciendo «adiós» o con Ctrl+C. En el simulador de Dialogflow hay que activar **Settings → Speech → Automatic Text To Speech**.
+En PowerShell, la variable se define con `$env:DIALOGFLOW_PROJECT_ID="..."`. En el login de Google, marca todas las casillas de permisos (incluido *cloud-platform*) o fallará. Usa tu propio ID de proyecto en lugar de `clinica-patitas-blandas-ndyi`. Pulsa Enter una vez; después el cliente graba tras cada respuesta. Se cierra diciendo «adiós» o con Ctrl+C. En el simulador de Dialogflow hay que activar **Settings → Speech → Automatic Text To Speech**.
 
 El cliente envía audio LINEAR16 mono a 16 kHz a `SessionsClient.detect_intent`, mantiene una sesión durante la conversación y reproduce el audio devuelto por Dialogflow. Dialogflow proporciona el reconocimiento de voz (STT) y la síntesis de voz (TTS); no se necesita contratar otro servicio de voz. En Linux, `sounddevice` puede necesitar la biblioteca de sistema PortAudio.
 
