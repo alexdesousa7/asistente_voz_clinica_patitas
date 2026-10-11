@@ -1,0 +1,41 @@
+[
+  {
+    "id": "4126de2e-0bbc-4085-ac34-f7c4fa0a7167",
+    "data": [
+      {
+        "text": "¿Cuál es el horario de la clínica?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "97d5daae-b01f-4f4e-8faa-a224b0eac491",
+    "data": [
+      {
+        "text": "¿A qué hora abrís?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6580702c-251e-4a8a-af9d-59c59ea30295",
+    "data": [
+      {
+        "text": "¿Abrís los sábados?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

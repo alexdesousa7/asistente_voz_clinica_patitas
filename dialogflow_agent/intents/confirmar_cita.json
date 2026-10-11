@@ -1,0 +1,35 @@
+{
+  "id": "0bcf97ee-385c-4a25-b60a-b7f418d8efdc",
+  "name": "confirmar_cita",
+  "auto": true,
+  "contexts": [
+    "ctx_confirmacion_cita"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

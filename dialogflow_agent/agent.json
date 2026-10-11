@@ -1,0 +1,24 @@
+{
+  "description": "Asistente de voz de una clínica veterinaria ficticia.",
+  "language": "es",
+  "displayName": "Clinica-Patitas-Blandas",
+  "defaultTimezone": "Europe/Madrid",
+  "webhook": {
+    "url": "",
+    "username": "",
+    "headers": {},
+    "available": false,
+    "useForDomains": false,
+    "cloudFunctionsEnabled": false,
+    "cloudFunctionsInitialized": false
+  },
+  "mlMinConfidence": 0.3,
+  "supportedLanguages": [],
+  "enableOnePlatformApi": true,
+  "onePlatformApiVersion": "v2beta1",
+  "analyzeQueryTextSentiment": false,
+  "enabledKnowledgeBaseNames": [],
+  "knowledgeServiceConfidenceAdjustment": 0.0,
+  "dialogBuilderMode": false,
+  "enableSpellCorrection": false
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "72ad95df-77e0-47de-9b9b-7857e7fb29b3",
+    "data": [
+      {
+        "text": "Cancela la solicitud de cita",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "240bebe8-aff6-42e6-a4ac-c2a84351a0af",
+    "data": [
+      {
+        "text": "Quiero cancelar la cita",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7929e3a4-02f6-4fd0-8642-7089afddfe3b",
+    "data": [
+      {
+        "text": "No quiero seguir con la reserva",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

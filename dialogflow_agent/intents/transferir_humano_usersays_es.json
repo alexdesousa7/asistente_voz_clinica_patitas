@@ -1,0 +1,132 @@
+[
+  {
+    "id": "ecce9f34-b97f-495a-9538-20d2dccab46a",
+    "data": [
+      {
+        "text": "Es una emergencia",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "a0d150e2-738a-4da5-84c9-26ada0d2e871",
+    "data": [
+      {
+        "text": "Es una urgencia",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "8677ca73-8a14-4fe0-ac1e-5b09ce59b28b",
+    "data": [
+      {
+        "text": "Mi perro se ha intoxicado",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "28f281b8-88bb-412b-9ab0-24f7f97fea64",
+    "data": [
+      {
+        "text": "Mi gato está sangrando",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "1719f129-b858-4256-9bbf-a8d32ae8dd4b",
+    "data": [
+      {
+        "text": "Necesito hablar con una persona",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "040fd53e-db8b-43be-8b0a-c52399f89b44",
+    "data": [
+      {
+        "text": "Quiero hablar con un operador",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d3e0ca38-8dcd-41b1-b967-28b484bc1eb6",
+    "data": [
+      {
+        "text": "Pásame con un humano",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7e7d8444-7b02-4bd6-9f57-9a2ee377ca64",
+    "data": [
+      {
+        "text": "Mi mascota ha tenido un accidente",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "7bfd6821-09c9-4689-80dd-c7e1bf1aeab1",
+    "data": [
+      {
+        "text": "Mi mascota no respira bien",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "39d58fa5-76cd-4afa-854c-4ae27e86e6c5",
+    "data": [
+      {
+        "text": "Urgencia veterinaria",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

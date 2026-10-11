@@ -1,0 +1,44 @@
+{
+  "id": "99056f00-ffb7-4f8f-ae46-302abc498b3e",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [
+        {
+          "name": "ctx_cita_en_curso",
+          "lifespan": 10
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Hola, bienvenido a Clínica Patitas. ¿Tienes perro, gato u otra mascota? Puedo ayudarte a pedir una cita o consultar información de la clínica."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

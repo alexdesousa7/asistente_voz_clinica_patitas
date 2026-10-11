@@ -1,0 +1,9 @@
+{
+  "id": "524e2151-e47f-4f62-a5a4-9a96eb0113d9",
+  "name": "telefono",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": true,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

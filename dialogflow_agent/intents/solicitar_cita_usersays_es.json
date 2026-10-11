@@ -1,0 +1,294 @@
+[
+  {
+    "id": "712868d4-b218-4eec-aebe-8c534084e147",
+    "data": [
+      {
+        "text": "Quiero pedir una cita",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f89a49d3-13a1-49a3-bcbc-c87e1526b1fc",
+    "data": [
+      {
+        "text": "Necesito una cita para mi ",
+        "userDefined": false
+      },
+      {
+        "text": "perro",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "ce21e676-f63e-4525-aa88-31e09e1eb882",
+    "data": [
+      {
+        "text": "Quiero llevar a mi ",
+        "userDefined": false
+      },
+      {
+        "text": "gato",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      },
+      {
+        "text": " al veterinario",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d6dc4e7f-8f2c-4b0b-b7dc-366efb69f7dd",
+    "data": [
+      {
+        "text": "Pedir cita para mi mascota",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "9b089582-8628-48c0-9a98-b63d27293d80",
+    "data": [
+      {
+        "text": "Tengo un ",
+        "userDefined": false
+      },
+      {
+        "text": "perro",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      },
+      {
+        "text": " y quiero una consulta",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6638cab4-b9fa-4366-9fce-200f3a620435",
+    "data": [
+      {
+        "text": "Tengo un ",
+        "userDefined": false
+      },
+      {
+        "text": "perro",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "fab2cf3a-c327-44cb-a9ac-160dc3a6eea0",
+    "data": [
+      {
+        "text": "Tengo una ",
+        "userDefined": false
+      },
+      {
+        "text": "perra",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f2486f4d-a62d-4d68-bdfe-5bcdbee118b3",
+    "data": [
+      {
+        "text": "Tengo un ",
+        "userDefined": false
+      },
+      {
+        "text": "gato",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "16a162c0-79dc-44c9-9d95-2c237c881e4a",
+    "data": [
+      {
+        "text": "Tengo una ",
+        "userDefined": false
+      },
+      {
+        "text": "gata",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "d5beaef5-4b36-42d9-94b9-bbb423b485c1",
+    "data": [
+      {
+        "text": "Tengo un ",
+        "userDefined": false
+      },
+      {
+        "text": "conejo",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "f7c2b23a-0f6d-4096-9ebc-c0b244af258a",
+    "data": [
+      {
+        "text": "Perro",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "2d61cf4c-d84e-4fe7-b006-309b2e38ad91",
+    "data": [
+      {
+        "text": "Gato",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "e2c592f4-f7be-4072-b13b-01076216c486",
+    "data": [
+      {
+        "text": "Otro",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "69a10211-a9ff-4e40-bc95-df2816597481",
+    "data": [
+      {
+        "text": "Mi mascota es un ",
+        "userDefined": false
+      },
+      {
+        "text": "perro",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "484f423b-f2cf-4734-9752-29425b212683",
+    "data": [
+      {
+        "text": "Mi mascota es un ",
+        "userDefined": false
+      },
+      {
+        "text": "gato",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "cffb389b-3193-4657-ab74-1e4f21397618",
+    "data": [
+      {
+        "text": "Necesito una cita para ",
+        "userDefined": false
+      },
+      {
+        "text": "otro",
+        "alias": "tipo_mascota",
+        "meta": "@tipo_mascota",
+        "userDefined": true
+      },
+      {
+        "text": " animal",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

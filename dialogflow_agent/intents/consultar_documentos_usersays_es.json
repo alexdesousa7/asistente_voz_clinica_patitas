@@ -1,0 +1,93 @@
+[
+  {
+    "id": "a1e95bf3-3e13-4512-bc71-f470b3ab1299",
+    "data": [
+      {
+        "text": "¿Cómo preparo la visita de mi perro?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b3fbbe9c-eaf5-4d1c-bdbd-afd018641cb9",
+    "data": [
+      {
+        "text": "¿Qué necesito llevar para mi gato?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "90e94bf9-95ad-40c1-a839-60804e1be12a",
+    "data": [
+      {
+        "text": "¿Qué dicen los documentos sobre la visita?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "dfbf6b59-100c-4299-88c3-a3d059eac1f7",
+    "data": [
+      {
+        "text": "¿Qué debo hacer antes de la visita?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "6a973dc9-5f52-452b-a422-1d85e925c8b1",
+    "data": [
+      {
+        "text": "¿Qué tengo que llevar a la consulta?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b8515048-6162-43de-a1b1-c0fe440cb209",
+    "data": [
+      {
+        "text": "¿Cuánto cuesta una consulta?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "775ea9b2-8c29-4bdc-a1ca-a792484cb070",
+    "data": [
+      {
+        "text": "¿Cuáles son los precios?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

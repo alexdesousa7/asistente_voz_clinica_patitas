@@ -1,0 +1,41 @@
+[
+  {
+    "id": "2f062503-8a19-4b2e-a07c-23a78324da5b",
+    "data": [
+      {
+        "text": "¿Qué servicios ofrecéis?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "b24520a7-219c-453c-91fa-a5473e0fca60",
+    "data": [
+      {
+        "text": "¿Ponéis microchip?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  },
+  {
+    "id": "5e8c2248-a2c4-49b6-be93-7f457c441254",
+    "data": [
+      {
+        "text": "¿Hacéis vacunación?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "es",
+    "updated": 0
+  }
+]

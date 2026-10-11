@@ -1,0 +1,155 @@
+{
+  "id": "054301b8-2be7-4367-9737-254e7987d6c0",
+  "name": "solicitar_cita",
+  "auto": true,
+  "contexts": [
+    "ctx_cita_en_curso"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ctx_cita_en_curso",
+          "lifespan": 10
+        }
+      ],
+      "parameters": [
+        {
+          "id": "c1f2f0b9-75b7-4d05-b73a-0a08d9132841",
+          "name": "tipo_mascota",
+          "required": true,
+          "dataType": "@tipo_mascota",
+          "value": "$tipo_mascota",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Es un perro, un gato u otro tipo de mascota?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "980411ef-d73c-4746-a920-a643268b5d86",
+          "name": "nombre_mascota",
+          "required": true,
+          "dataType": "@sys.any",
+          "value": "$nombre_mascota",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cómo se llama tu mascota?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "75d3cb9e-4f3e-4117-9dd0-e505abaf79e6",
+          "name": "motivo",
+          "required": true,
+          "dataType": "@sys.any",
+          "value": "$motivo",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuál es el motivo de la visita? Por ejemplo: vacunación, revisión general o una molestia."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "f62d8e89-bae6-4575-810b-186996bdc8df",
+          "name": "fecha",
+          "required": true,
+          "dataType": "@sys.date",
+          "value": "$fecha",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Qué día te viene bien? Atendemos de lunes a viernes de 9 a 14 y de 17 a 20, y los sábados de 9 a 13. Dime la fecha, por ejemplo: el próximo martes."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "6d086512-8b16-4235-a41e-af8f7d261f03",
+          "name": "hora",
+          "required": true,
+          "dataType": "@sys.time",
+          "value": "$hora",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿A qué hora prefieres la cita? Por la mañana tengo a las 9, 11 o 13 horas y por la tarde a las 17 o 19 horas (los sábados, solo por la mañana)."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "bd530173-9753-487d-8b0d-4e3d23152628",
+          "name": "telefono",
+          "required": true,
+          "dataType": "@telefono",
+          "value": "$telefono",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuál es tu teléfono móvil? Dime las nueve cifras despacio, de tres en tres."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

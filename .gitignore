@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+*.py[cod]
+*.wav
+clinica_patitas_cloud_run.zip
+*.mp4
+!demo/*.mp4

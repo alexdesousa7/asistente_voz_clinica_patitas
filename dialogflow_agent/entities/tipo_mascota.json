@@ -1,0 +1,9 @@
+{
+  "id": "675014d1-8325-4d8f-b684-deb522bdc20e",
+  "name": "tipo_mascota",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}
