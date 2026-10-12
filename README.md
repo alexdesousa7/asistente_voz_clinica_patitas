@@ -14,6 +14,10 @@
 
 ---
 
+> 🎬 **Vídeo de demostración:** en la carpeta [`demo/`](demo/) del ZIP de entrega, archivo `Modulo_Herramientas_IA.mkv` (conversación por voz completa: cita, consulta a documentos, pregunta sin respuesta y transferencia por urgencia). El vídeo no se sube a GitHub por su tamaño.
+
+---
+
 Prototipo académico de una clínica ficticia, **Clínica Patitas**, para pedir una cita por voz o consultar información de sus documentos. Dialogflow ES en Google Cloud reconoce la intención y administra los turnos; en la solicitud de cita pide especie, nombre de la mascota, motivo, fecha, hora y teléfono, y solo envía la solicitud de demostración cuando la persona confirma con sí. Un webhook FastAPI valida los datos y consulta mediante Gemini en Vertex AI un conjunto pequeño de documentos procesados antes con OCR. Los horarios y servicios incluidos son datos ficticios de demostración, no información de una clínica real.
 
 ## Arquitectura
@@ -63,6 +67,7 @@ El agente contiene seis intenciones de negocio más la extra de transferencia, a
 | `cliente_voz.py` | Cliente de voz de escritorio (micrófono → Dialogflow → altavoz). |
 | `dialogflow_agent/`, `dialogflow_agent.zip` | Agente Dialogflow ES generado por `scripts/build_dialogflow_agent.py`. |
 | `scripts/` | Generadores del agente, de las fichas y del paquete de Cloud Run. |
+| `demo/` | Vídeo de la demostración (solo en el ZIP de entrega). |
 | `tests/` | Pruebas (`python -m unittest discover -s tests`). |
 
 ## Cómo funciona
