@@ -14,7 +14,7 @@
 
 ---
 
-> 🎬 **Vídeo de demostración:** en la carpeta [`demo/`](demo/), archivo `Modulo_Herramientas_IA.mkv` (conversación por voz completa: cita, consulta a documentos, pregunta sin respuesta y transferencia por urgencia).
+> 🎬 **Vídeo de demostración:** en la carpeta [`demo/`](demo/), archivo `Modulo_Herramientas_IA.mp4` (conversación por voz completa: cita, consulta a documentos, pregunta sin respuesta y transferencia por urgencia).
 
 ---
 
