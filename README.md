@@ -1,4 +1,4 @@
-# 🐾 Asistente de voz — Clínica Patitas 🎙️
+# 🐶 🐾 Asistente de voz 🎙️ — Clínica Patitas 🐾 🐱
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python" />
