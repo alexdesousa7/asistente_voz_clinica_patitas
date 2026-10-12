@@ -7,5 +7,3 @@ __pycache__/
 clinica_patitas_cloud_run.zip
 *.mp4
 !demo/*.mp4
-*.mkv
-demo/

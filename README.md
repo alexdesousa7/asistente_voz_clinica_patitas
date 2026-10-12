@@ -14,7 +14,7 @@
 
 ---
 
-> 🎬 **Vídeo de demostración:** en la carpeta [`demo/`](demo/) del ZIP de entrega, archivo `Modulo_Herramientas_IA.mkv` (conversación por voz completa: cita, consulta a documentos, pregunta sin respuesta y transferencia por urgencia). El vídeo no se sube a GitHub por su tamaño.
+> 🎬 **Vídeo de demostración:** en la carpeta [`demo/`](demo/), archivo `Modulo_Herramientas_IA.mkv` (conversación por voz completa: cita, consulta a documentos, pregunta sin respuesta y transferencia por urgencia).
 
 ---
 
@@ -67,7 +67,7 @@ El agente contiene seis intenciones de negocio más la extra de transferencia, a
 | `cliente_voz.py` | Cliente de voz de escritorio (micrófono → Dialogflow → altavoz). |
 | `dialogflow_agent/`, `dialogflow_agent.zip` | Agente Dialogflow ES generado por `scripts/build_dialogflow_agent.py`. |
 | `scripts/` | Generadores del agente, de las fichas y del paquete de Cloud Run. |
-| `demo/` | Vídeo de la demostración (solo en el ZIP de entrega). |
+| `demo/` | Vídeo de la demostración. |
 | `tests/` | Pruebas (`python -m unittest discover -s tests`). |
 
 ## Cómo funciona
